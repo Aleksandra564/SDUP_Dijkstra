@@ -1,20 +1,3 @@
-def Q_remove(Q, u):
-  Q.remove(u)
-  return Q
-  
-  
-def test_func(v, Q, dist):
-  min_dist = float("inf")
-  for v in Q:
-    # print("v =", v)                         #
-    # print("min_dist =", min_dist)           #
-    if dist[v] < min_dist:
-      min_dist = dist[v]
-      if v in Q and dist[v] == min_dist:
-        u = v
-  return min_dist, u
-
-
 def Dijkstra(graph, source):
   Q = []
   dist = [float("inf")]*len(graph)
@@ -27,13 +10,20 @@ def Dijkstra(graph, source):
 
   while Q:
     # print("Q =", Q)                           #
-    # print("v =", v)                         #
-    # print("min_dist =", min_dist)           #
+    # print("v =", v)                           #
+    # print("min_dist =", min_dist)             #
 
-    min_dist, u = test_func(v, Q, dist)
-    # print("dist[v] =", dist[v])             #
-    # print("min_dist =", min_dist)           #
-    Q_remove(Q, u)
+    min_dist = float("inf")
+    for v in Q:
+    # print("v =", v)                           #
+    # print("min_dist =", min_dist)             #
+      if dist[v] < min_dist:
+        min_dist = dist[v]
+        if dist[v] == min_dist:
+          u = v
+    # print("dist[v] =", dist[v])               #
+    # print("min_dist =", min_dist)             #
+    Q.remove(u)
 
     for neighbor in range(len(graph)):
       # print("neighbor =", neighbor)           #
