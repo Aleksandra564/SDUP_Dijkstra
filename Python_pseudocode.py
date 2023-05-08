@@ -19,8 +19,7 @@ def Dijkstra(graph, source):
     # print("min_dist =", min_dist)             #
       if dist[v] < min_dist:
         min_dist = dist[v]
-        if dist[v] == min_dist:
-          u = v
+        u = v
     # print("dist[v] =", dist[v])               #
     # print("min_dist =", min_dist)             #
     Q.remove(u)
