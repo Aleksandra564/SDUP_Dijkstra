@@ -1,47 +1,33 @@
 def Dijkstra(graph, source):
-  Q = []
-  dist = [float("inf")]*len(graph)
-  prev = [None]*len(graph)
+  graph_length = len(graph)
+  Q = [0]*graph_length
+  counter = 0
+  dist = [float("inf")]*graph_length
+  prev = [None]*graph_length
 
-  for v in range(len(graph)):
-    Q.append(v)
+  for v in range(graph_length):
+    Q[v] = v
   dist[source] = 0
-  # print("dist[source] =", dist[source])       #
 
-  while Q:
-    # print("Q =", Q)                           #
-    # print("v =", v)                           #
-    # print("min_dist =", min_dist)             #
-
+  while counter < graph_length:
+    counter += 1
     min_dist = float("inf")
-    for v in Q:
-    # print("v =", v)                           #
-    # print("min_dist =", min_dist)             #
-      if dist[v] < min_dist:
+    for v in range(len(Q)):
+      vertex = Q[v]
+      if dist[v] < min_dist and vertex != 2137:
         min_dist = dist[v]
-        u = v
-    # print("dist[v] =", dist[v])               #
-    # print("min_dist =", min_dist)             #
-    Q.remove(u)
+        u = vertex               # przypisuje numer nieodwiedzonego wierzchołka o najmniejszym dist do zmiennej u
+    for i in range(len(Q)):
+      if Q[i] == u:
+        Q[i] = 2137
 
-    for neighbor in range(len(graph)):
-      # print("neighbor =", neighbor)           #
+    for neighbor in range(graph_length):
       edge = graph[u][neighbor]
-      # print("edge =", edge)                   #
-      if neighbor in Q and edge != 0:
-        alt = dist[u] + edge
-        if alt < dist[neighbor]:
-          dist[neighbor] = alt
-          prev[neighbor] = u
+      for j in Q:
+        if j == neighbor and edge != 0:
+          alt = dist[u] + edge
+          if alt < dist[neighbor]:
+            dist[neighbor] = alt
+            prev[neighbor] = u
   
   return dist, prev
-
-
-
-graph = [[0, 1, 1, 8, 0, 3, 0, 0, 0], [1, 0, 0, 0, 0, 0, 5, 0, 0], [1, 0, 0, 0, 0, 1, 0, 0, 0], [8, 0, 0, 0, 2, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 4, 0], [3, 0, 1, 0, 0, 0, 0, 2, 0], [0, 5, 0, 0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 4, 2, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0, 0]]
-source = graph[0][0]  # rząd, kolumna
-
-dist, prev = Dijkstra(graph, source)
-
-print("dist:", dist)
-print("prev:", prev)
