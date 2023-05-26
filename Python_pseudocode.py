@@ -1,14 +1,12 @@
 def Dijkstra(graph, source):
   graph_length = len(graph)
   visited = [False]*graph_length
-  counter = 0
   dist = [float("inf")]*graph_length
   prev = [None]*graph_length
 
   dist[source] = 0
 
-  while counter < graph_length:
-    counter += 1
+  for i in range(graph_length):
     min_dist = float("inf")
 
     for v in range(graph_length):
@@ -26,7 +24,6 @@ def Dijkstra(graph, source):
           prev[neighbor] = u
   
   return dist, prev
-
 
 ########## TEST ##########
 graph = [[0, 1, 1, 8, 0, 3, 0, 0, 0], [1, 0, 0, 0, 0, 0, 5, 0, 0], [1, 0, 0, 0, 0, 1, 0, 0, 0], [8, 0, 0, 0, 2, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 4, 0], [3, 0, 1, 0, 0, 0, 0, 2, 0], [0, 5, 0, 0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 4, 2, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0, 0]]
