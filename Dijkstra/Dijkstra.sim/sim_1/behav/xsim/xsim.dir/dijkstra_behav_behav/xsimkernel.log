@@ -1,7 +1,7 @@
-Running: xsim.dir/dijkstra_behav_behav/xsimk.exe -simmode gui -wdb dijkstra_behav_behav.wdb -simrunnum 0 -socket 56663
+Running: xsim.dir/dijkstra_behav_behav/xsimk.exe -simmode gui -wdb dijkstra_behav_behav.wdb -simrunnum 0 -socket 52210
 Design successfully loaded
-Design Loading Memory Usage: 5912 KB (Peak: 5912 KB)
-Design Loading CPU Usage: 46 ms
+Design Loading Memory Usage: 7364 KB (Peak: 7364 KB)
+Design Loading CPU Usage: 31 ms
 Simulation completed
-Simulation Memory Usage: 6544 KB (Peak: 6544 KB)
-Simulation CPU Usage: 186 ms
+Simulation Memory Usage: 7988 KB (Peak: 7988 KB)
+Simulation CPU Usage: 46 ms

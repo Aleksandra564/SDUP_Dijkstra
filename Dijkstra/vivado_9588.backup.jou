@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun  9 20:40:24 2023
+# Process ID: 9588
+# Current directory: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11892 C:\Users\olafu\Desktop\SDUP\PROJEKT\SDUP_Dijkstra\Dijkstra\Dijkstra.xpr
+# Log file: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/vivado.log
+# Journal file: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv w ]
+add_files C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv
+update_compile_order -fileset sources_1
