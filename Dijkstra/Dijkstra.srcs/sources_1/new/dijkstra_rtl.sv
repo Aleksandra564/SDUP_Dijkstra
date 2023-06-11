@@ -116,9 +116,9 @@ module dijkstra_rtl #(
                             distance_nxt[neighbors_counter] = alt;
                             prev_nxt[neighbors_counter] = u;
                         end
+                    end
                     neighbors_counter_nxt = neighbors_counter + 1;
                     state_nxt = FIND_ALTERNATIVE_PATH;
-                    end
                 end
                 else if (counter < VERTICES) begin
                     min_dist_nxt = MAX_VALUE;
