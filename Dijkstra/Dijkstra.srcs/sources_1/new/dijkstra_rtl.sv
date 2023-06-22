@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-
+ 
 module dijkstra_rtl #(
     parameter integer VERTICES = 11,    // vertices
     parameter integer N = 8,
@@ -66,9 +66,9 @@ module dijkstra_rtl #(
             done <= done_nxt;
         end
     end
-
+ 
 //////////////////////////////////////////////////////////////////////////////////
-
+ 
     always_comb begin
         case(state)
             /////////////////////////////////////////////////////////////////////
@@ -79,7 +79,7 @@ module dijkstra_rtl #(
                     visited_nxt = '{default: 0};
                     distance_nxt[source] = 0;
                     done_nxt = 0;
-
+ 
                     min_dist_nxt = MAX_VALUE;
                     vertices_counter_nxt = 0;
                     neighbors_counter_nxt = 0;

@@ -1078,7 +1078,14 @@
     assign slv_wire3[31:28] = 4'b0;
     
     localparam integer N = 8;
-    localparam integer VERTICES = 11;
+    localparam integer VERTICES = 12;
+    
+    // zadeklarowaæ tymczasowy array (wire) i do niego przypisaæ (assign) rejestry (?)
+    // wire graph_array [rozmiar] 
+    // assign ... (u¿yæ for lub genvar)
+    
+    // dodaæ plik dijkstra_rtl.sv zamiast go tu przepisywaæ
+    // cofn¹æ type na verilog
     
     dijkstra_rtl #(
         .VERTICES(VERTICES),
@@ -1088,11 +1095,12 @@
         .clk(S_AXI_ACLK),
         .rst(ARESET),
         .enable(slv_reg0[0]),
-        .source(slv_reg1[N-1:0]),
-        .graph(slv_reg2[N-1:0]),    // w sumie 36 rejestrów 32-bit
-        .distance(slv_reg3[N-1:0]), // w sumie 3 rejestry 32-bit
-        .prev(slv_reg4[N-1:0]),     // w sumie 3 rejestry 32-bit
-        .done(slv_reg5[0])
+        .source(slv_reg1),
+//        .graph({{slv_reg2[31:24], slv_reg2[23:16], slv_reg2[15:8], slv_reg2[7:0], slv_reg3[31:24], slv_reg3[23:16], slv_reg3[15:8], slv_reg3[7:0], slv_reg4[31:24], slv_reg4[23:16], slv_reg4[15:8], slv_reg4[7:0]}, {slv_reg5[31:24], slv_reg5[23:16], slv_reg5[15:8], slv_reg5[7:0], slv_reg6[31:24], slv_reg6[23:16], slv_reg6[15:8], slv_reg6[7:0], slv_reg7[31:24], slv_reg7[23:16], slv_reg7[15:8], slv_reg7[7:0]}, {slv_reg8[31:24], slv_reg8[23:16], slv_reg8[15:8], slv_reg8[7:0], slv_reg9[31:24], slv_reg9[23:16], slv_reg9[15:8], slv_reg9[7:0], slv_reg10[31:24], slv_reg10[23:16], slv_reg10[15:8], slv_reg10[7:0]}, {slv_reg11[31:24], slv_reg11[23:16], slv_reg11[15:8], slv_reg11[7:0], slv_reg12[31:24], slv_reg12[23:16], slv_reg12[15:8], slv_reg12[7:0], slv_reg13[31:24], slv_reg13[23:16], slv_reg13[15:8], slv_reg13[7:0]}, {slv_reg14[31:24], slv_reg14[23:16], slv_reg14[15:8], slv_reg14[7:0], slv_reg15[31:24], slv_reg15[23:16], slv_reg15[15:8], slv_reg15[7:0], slv_reg16[31:24], slv_reg16[23:16], slv_reg16[15:8], slv_reg16[7:0]}, {slv_reg17[31:24], slv_reg17[23:16], slv_reg17[15:8], slv_reg17[7:0], slv_reg18[31:24], slv_reg18[23:16], slv_reg18[15:8], slv_reg18[7:0], slv_reg19[31:24], slv_reg19[23:16], slv_reg19[15:8], slv_reg19[7:0]}, {slv_reg20[31:24], slv_reg20[23:16], slv_reg20[15:8], slv_reg20[7:0], slv_reg21[31:24], slv_reg21[23:16], slv_reg21[15:8], slv_reg21[7:0], slv_reg22[31:24], slv_reg22[23:16], slv_reg22[15:8], slv_reg22[7:0]}, {slv_reg23[31:24], slv_reg23[23:16], slv_reg23[15:8], slv_reg23[7:0], slv_reg24[31:24], slv_reg24[23:16], slv_reg24[15:8], slv_reg24[7:0], slv_reg25[31:24], slv_reg25[23:16], slv_reg25[15:8], slv_reg25[7:0]}, {slv_reg26[31:24], slv_reg26[23:16], slv_reg26[15:8], slv_reg26[7:0], slv_reg27[31:24], slv_reg27[23:16], slv_reg27[15:8], slv_reg27[7:0], slv_reg28[31:24], slv_reg28[23:16], slv_reg28[15:8], slv_reg28[7:0]}, {slv_reg29[31:24], slv_reg29[23:16], slv_reg29[15:8], slv_reg29[7:0], slv_reg30[31:24], slv_reg30[23:16], slv_reg30[15:8], slv_reg30[7:0], slv_reg31[31:24], slv_reg31[23:16], slv_reg31[15:8], slv_reg31[7:0]}, {slv_reg32[31:24], slv_reg32[23:16], slv_reg32[15:8], slv_reg32[7:0], slv_reg33[31:24], slv_reg33[23:16], slv_reg33[15:8], slv_reg33[7:0], slv_reg34[31:24], slv_reg34[23:16], slv_reg34[15:8], slv_reg34[7:0]}, {slv_reg35[31:24], slv_reg35[23:16], slv_reg35[15:8], slv_reg35[7:0], slv_reg36[31:24], slv_reg36[23:16], slv_reg36[15:8], slv_reg36[7:0], slv_reg37[31:24], slv_reg37[23:16], slv_reg37[15:8], slv_reg37[7:0]}}),    // w sumie 36 rejestrów 32-bit
+        .graph({slv_reg2, slv_reg3, slv_reg4, slv_reg5, slv_reg6, slv_reg7, slv_reg8, slv_reg9, slv_reg10, slv_reg11, slv_reg12, slv_reg13, slv_reg14, slv_reg15, slv_reg16, slv_reg17, slv_reg18, slv_reg19, slv_reg20, slv_reg21, slv_reg22, slv_reg23, slv_reg24, slv_reg25, slv_reg26, slv_reg27, slv_reg28, slv_reg29, slv_reg30, slv_reg31, slv_reg32, slv_reg33, slv_reg34, slv_reg35, slv_reg36, slv_reg37}),    // w sumie 36 rejestrów 32-bit
+        .distance({slv_reg38, slv_reg39, slv_reg40}), // w sumie 3 rejestry 32-bit
+        .prev({slv_reg41, slv_reg42, slv_reg43}),     // w sumie 3 rejestry 32-bit
+        .done(slv_reg44[0])
     );
     
 	// User logic ends
@@ -1105,7 +1113,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module dijkstra_rtl #(
-    parameter integer VERTICES = 11,    // vertices
+    parameter integer VERTICES = 12,    // vertices
     parameter integer N = 8,
     parameter MAX_VALUE = 2**N -1
     )(

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1686503636">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1686774666">
   <File Type="PA-TCL" Name="dijkstra_rtl.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="dijkstra_rtl_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="dijkstra_rtl_reports.tcl"/>
   <File Type="RDS-RDS" Name="dijkstra_rtl.vds"/>
   <File Type="RDS-UTIL" Name="dijkstra_rtl_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="dijkstra_rtl_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="dijkstra_rtl.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="dijkstra_rtl_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="dijkstra_rtl_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/dijkstra_rtl.sv">

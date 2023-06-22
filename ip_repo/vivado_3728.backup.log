@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun 12 18:44:01 2023
+# Process ID: 3728
+# Current directory: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1920 C:\Users\olafu\Desktop\SDUP\PROJEKT\SDUP_Dijkstra\ip_repo\edit_dijkstra_ip_v1_0.xpr
+# Log file: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/vivado.log
+# Journal file: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/edit_dijkstra_ip_v1_0.xpr
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 792.988 ; gain = 198.277
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+[Mon Jun 12 19:17:02 2023] Launched synth_1...
+Run output will be captured here: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/edit_dijkstra_ip_v1_0.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+[Mon Jun 12 19:23:09 2023] Launched synth_1...
+Run output will be captured here: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/edit_dijkstra_ip_v1_0.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+[Mon Jun 12 19:25:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/edit_dijkstra_ip_v1_0.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+[Mon Jun 12 19:27:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/edit_dijkstra_ip_v1_0.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+[Mon Jun 12 19:27:37 2023] Launched synth_1...
+Run output will be captured here: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/edit_dijkstra_ip_v1_0.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+[Mon Jun 12 20:00:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/edit_dijkstra_ip_v1_0.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 12 23:15:06 2023...

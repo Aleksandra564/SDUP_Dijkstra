@@ -1,0 +1,115 @@
+
+*** Running vivado
+    with args -log dijkstra_ip_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dijkstra_ip_v1_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dijkstra_ip_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/edit_dijkstra_ip_v1_0.cache/ip 
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
+Command: synth_design -top dijkstra_ip_v1_0 -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13864 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 498.930 ; gain = 101.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dijkstra_ip_v1_0' [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dijkstra_ip_v1_0_S00_AXI' [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 5 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+	Parameter VERTICES bound to: 12 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:351]
+INFO: [Synth 8-226] default block is never used [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:972]
+INFO: [Synth 8-6157] synthesizing module 'dijkstra_rtl' [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1108]
+	Parameter VERTICES bound to: 12 - type: integer 
+	Parameter N bound to: 8 - type: integer 
+	Parameter MAX_VALUE bound to: 255 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1177]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[0] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[1] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[2] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[3] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[4] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[5] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[6] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[7] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[8] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[9] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[10] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-6014] Unused sequential element visited_reg[11] was removed.  [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1151]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[0]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[1]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[2]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[3]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[4]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[5]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[6]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[7]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[8]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[9]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[10]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'distance_nxt_reg[11]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1181]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[0]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[1]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[2]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[3]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[4]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[5]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[6]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[7]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[8]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[9]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[10]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'prev_nxt_reg[11]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1182]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[0]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[1]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[2]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[3]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[4]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[5]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[6]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[7]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[8]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[9]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[10]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'visited_nxt_reg[11]' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1183]
+WARNING: [Synth 8-87] always_comb on 'done_nxt_reg' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1185]
+WARNING: [Synth 8-87] always_comb on 'min_dist_nxt_reg' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1187]
+WARNING: [Synth 8-87] always_comb on 'vertices_counter_nxt_reg' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1188]
+WARNING: [Synth 8-87] always_comb on 'neighbors_counter_nxt_reg' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1189]
+WARNING: [Synth 8-87] always_comb on 'counter_nxt_reg' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1190]
+WARNING: [Synth 8-87] always_comb on 'state_nxt_reg' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1191]
+WARNING: [Synth 8-87] always_comb on 'u_nxt_reg' did not result in combinational logic [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1202]
+INFO: [Synth 8-6155] done synthesizing module 'dijkstra_rtl' (1#1) [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1108]
+ERROR: [Synth 8-659] type mismatch in unpacked array concatenation: bit [95:0]A vs. bit [7:0]B[0:11] [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1093]
+ERROR: [Synth 8-359] invalid assignment pattern [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:1093]
+ERROR: [Synth 8-6156] failed synthesizing module 'dijkstra_ip_v1_0_S00_AXI' [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:4]
+ERROR: [Synth 8-6156] failed synthesizing module 'dijkstra_ip_v1_0' [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 556.434 ; gain = 159.102
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 59 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 20:39:37 2023...

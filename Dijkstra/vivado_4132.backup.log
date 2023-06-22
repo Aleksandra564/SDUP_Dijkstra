@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun 13 20:02:33 2023
+# Process ID: 4132
+# Current directory: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17500 C:\Users\olafu\Desktop\SDUP\PROJEKT\SDUP_Dijkstra\Dijkstra\Dijkstra.xpr
+# Log file: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/vivado.log
+# Journal file: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 820.094 ; gain = 224.699
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 20:40:12 2023...

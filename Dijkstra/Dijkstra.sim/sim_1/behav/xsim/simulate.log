@@ -1,24 +1,178 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
-	 distance[0] = 5
-	 distance[1] = 4
-	 distance[2] = 6
-	 distance[3] = 3
-	 distance[4] = 2
-	 distance[5] = 0
-	 distance[6] = 1
+	 RTL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance[0] = 0
+	 distance[1] = 1
+	 distance[2] = 1
+	 distance[3] = 8
+	 distance[4] = 8
+	 distance[5] = 2
+	 distance[6] = 5
 	 distance[7] = 4
-	 distance[8] = 5
-	 distance[9] = 10
-	 distance[10] = 13
-	 prev[0] = 4
-	 prev[1] = 3
-	 prev[2] = 1
-	 prev[3] = 6
-	 prev[4] = 5
+	 distance[8] = 6
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 0
+	 prev[3] = 0
+	 prev[4] = 7
+	 prev[5] = 2
+	 prev[6] = 7
+	 prev[7] = 5
+	 prev[8] = 6
+
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance_beh[0] = 0
+	 distance_beh[1] = 1
+	 distance_beh[2] = 1
+	 distance_beh[3] = 8
+	 distance_beh[4] = 8
+	 distance_beh[5] = 2
+	 distance_beh[6] = 5
+	 distance_beh[7] = 4
+	 distance_beh[8] = 6
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 0
+	 prev_beh[3] = 0
+	 prev_beh[4] = 7
+	 prev_beh[5] = 2
+	 prev_beh[6] = 7
+	 prev_beh[7] = 5
+	 prev_beh[8] = 6
+
+	 RTL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance[0] = 2
+	 distance[1] = 3
+	 distance[2] = 1
+	 distance[3] = 8
+	 distance[4] = 6
+	 distance[5] = 0
+	 distance[6] = 3
+	 distance[7] = 2
+	 distance[8] = 4
+	 prev[0] = 2
+	 prev[1] = 0
+	 prev[2] = 5
+	 prev[3] = 4
+	 prev[4] = 7
 	 prev[5] = 0
+	 prev[6] = 7
+	 prev[7] = 5
+	 prev[8] = 6
+
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance_beh[0] = 2
+	 distance_beh[1] = 3
+	 distance_beh[2] = 1
+	 distance_beh[3] = 8
+	 distance_beh[4] = 6
+	 distance_beh[5] = 0
+	 distance_beh[6] = 3
+	 distance_beh[7] = 2
+	 distance_beh[8] = 4
+	 prev_beh[0] = 2
+	 prev_beh[1] = 0
+	 prev_beh[2] = 5
+	 prev_beh[3] = 4
+	 prev_beh[4] = 7
+	 prev_beh[5] = 0
+	 prev_beh[6] = 7
+	 prev_beh[7] = 5
+	 prev_beh[8] = 6
+
+	 RTL:
+	 GRAPH 2, SOURCE = 0: 
+
+	 distance[0] = 0
+	 distance[1] = 1
+	 distance[2] = 2
+	 distance[3] = 8
+	 distance[4] = 3
+	 distance[5] = 4
+	 distance[6] = 10
+	 distance[7] = 6
+	 distance[8] = 5
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 1
+	 prev[3] = 1
+	 prev[4] = 2
+	 prev[5] = 2
 	 prev[6] = 5
-	 prev[7] = 6
-	 prev[8] = 7
-	 prev[9] = 8
-	 prev[10] = 9
+	 prev[7] = 4
+	 prev[8] = 5
+
+	 BEHAVIORAL:
+	 GRAPH 2, SOURCE = 0: 
+
+	 distance_beh[0] = 0
+	 distance_beh[1] = 1
+	 distance_beh[2] = 2
+	 distance_beh[3] = 8
+	 distance_beh[4] = 3
+	 distance_beh[5] = 4
+	 distance_beh[6] = 10
+	 distance_beh[7] = 6
+	 distance_beh[8] = 5
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 1
+	 prev_beh[3] = 1
+	 prev_beh[4] = 2
+	 prev_beh[5] = 2
+	 prev_beh[6] = 5
+	 prev_beh[7] = 4
+	 prev_beh[8] = 5
+
+	 RTL:
+	 GRAPH 2, SOURCE = 7: 
+
+	 distance[0] = 6
+	 distance[1] = 5
+	 distance[2] = 4
+	 distance[3] = 12
+	 distance[4] = 3
+	 distance[5] = 4
+	 distance[6] = 10
+	 distance[7] = 0
+	 distance[8] = 5
+	 prev[0] = 1
+	 prev[1] = 2
+	 prev[2] = 4
+	 prev[3] = 1
+	 prev[4] = 7
+	 prev[5] = 7
+	 prev[6] = 5
+	 prev[7] = 0
+	 prev[8] = 5
+
+	 BEHAVIORAL:
+	 GRAPH 2, SOURCE = 7: 
+
+	 distance_beh[0] = 6
+	 distance_beh[1] = 5
+	 distance_beh[2] = 4
+	 distance_beh[3] = 12
+	 distance_beh[4] = 3
+	 distance_beh[5] = 4
+	 distance_beh[6] = 10
+	 distance_beh[7] = 0
+	 distance_beh[8] = 5
+	 prev_beh[0] = 1
+	 prev_beh[1] = 2
+	 prev_beh[2] = 4
+	 prev_beh[3] = 1
+	 prev_beh[4] = 7
+	 prev_beh[5] = 7
+	 prev_beh[6] = 5
+	 prev_beh[7] = 0
+	 prev_beh[8] = 5
+

@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jun 11 19:04:22 2023
-# Process ID: 14320
+# Start of session at: Thu Jun 22 17:29:36 2023
+# Process ID: 4412
 # Current directory: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13920 C:\Users\olafu\Desktop\SDUP\PROJEKT\SDUP_Dijkstra\Dijkstra\Dijkstra.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11788 C:\Users\olafu\Desktop\SDUP\PROJEKT\SDUP_Dijkstra\Dijkstra\Dijkstra.xpr
 # Log file: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/vivado.log
 # Journal file: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra\vivado.jou
 #-----------------------------------------------------------
@@ -14,9 +14,11 @@ open_project C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 794.305 ; gain = 197.949
+open_project: Time (s): cpu = 00:00:49 ; elapsed = 00:00:37 . Memory (MB): peak = 824.605 ; gain = 217.816
 update_compile_order -fileset sources_1
 launch_simulation
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
@@ -39,61 +41,13 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
-Compiling module xil_defaultlib.dijkstra_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot dijkstra_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-source dijkstra_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 10000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 10000ns
-launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 829.668 ; gain = 29.082
-relaunch_sim
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+ERROR: [VRFC 10-3823] variable 'distance' might have multiple concurrent drivers [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv:65]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+INFO: [USF-XSim-99] Step results log file:'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 launch_simulation
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
@@ -115,11 +69,295 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+ERROR: [VRFC 10-3823] variable 'distance' might have multiple concurrent drivers [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv:89]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 866.133 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim/xsim.dir/dijkstra_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 22 18:58:34 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 866.133 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:49 . Memory (MB): peak = 892.453 ; gain = 4.145
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:52 . Memory (MB): peak = 892.453 ; gain = 26.320
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:59 . Memory (MB): peak = 892.453 ; gain = 26.320
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+add_bp {C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv} 33
+remove_bps -file {C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv} -line 33
+run all
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 892.453 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:04:44 . Memory (MB): peak = 892.453 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:04:46 . Memory (MB): peak = 892.453 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:04:49 . Memory (MB): peak = 892.453 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
 Compiling module xil_defaultlib.dijkstra_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot dijkstra_tb_behav
@@ -142,6 +380,1892 @@ source dijkstra_tb.tcl
 #   }
 # }
 # run 10000ns
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:46 . Memory (MB): peak = 892.453 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:48 . Memory (MB): peak = 892.453 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:51 . Memory (MB): peak = 892.453 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 895.918 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 895.918 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 895.918 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv:32]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+run: Time (s): cpu = 00:00:24 ; elapsed = 00:02:02 . Memory (MB): peak = 896.992 ; gain = 1.074
+xsim: Time (s): cpu = 00:00:27 ; elapsed = 00:02:04 . Memory (MB): peak = 896.992 ; gain = 1.074
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:27 ; elapsed = 00:02:07 . Memory (MB): peak = 896.992 ; gain = 1.074
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 896.992 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 896.992 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 918.789 ; gain = 11.715
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv:32]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 974.090 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 974.090 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1035.281 ; gain = 0.262
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.969 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 BEHAV: distance_beh[0] = 5
+	 BEHAV: distance_beh[1] = 4
+	 BEHAV: distance_beh[2] = 6
+	 BEHAV: distance_beh[3] = 3
+	 BEHAV: distance_beh[4] = 2
+	 BEHAV: distance_beh[5] = 0
+	 BEHAV: distance_beh[6] = 1
+	 BEHAV: distance_beh[7] = 4
+	 BEHAV: distance_beh[8] = 5
+	 BEHAV: distance_beh[9] = 10
+	 BEHAV: distance_beh[10] = 13
+	 BEHAV: prev_beh[0] = 4
+	 BEHAV: prev_beh[1] = 3
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 6
+	 BEHAV: prev_beh[4] = 5
+	 BEHAV: prev_beh[5] = 0
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.969 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [VRFC 10-2458] undeclared symbol done_beh, assumed default net type wire [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv:56]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'done' on this module [C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv:56]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 BEHAV: distance_beh[0] = 5
+	 BEHAV: distance_beh[1] = 4
+	 BEHAV: distance_beh[2] = 6
+	 BEHAV: distance_beh[3] = 3
+	 BEHAV: distance_beh[4] = 2
+	 BEHAV: distance_beh[5] = 0
+	 BEHAV: distance_beh[6] = 1
+	 BEHAV: distance_beh[7] = 4
+	 BEHAV: distance_beh[8] = 5
+	 BEHAV: distance_beh[9] = 10
+	 BEHAV: distance_beh[10] = 13
+	 BEHAV: prev_beh[0] = 4
+	 BEHAV: prev_beh[1] = 3
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 6
+	 BEHAV: prev_beh[4] = 5
+	 BEHAV: prev_beh[5] = 0
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.969 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 GRAPH 1
+	 BEHAV: distance_beh[0] = 0
+	 BEHAV: distance_beh[1] = 5
+	 BEHAV: distance_beh[2] = 7
+	 BEHAV: distance_beh[3] = 6
+	 BEHAV: distance_beh[4] = 3
+	 BEHAV: distance_beh[5] = 5
+	 BEHAV: distance_beh[6] = 6
+	 BEHAV: distance_beh[7] = 9
+	 BEHAV: distance_beh[8] = 10
+	 BEHAV: distance_beh[9] = 15
+	 BEHAV: distance_beh[10] = 18
+	 BEHAV: prev_beh[0] = 0
+	 BEHAV: prev_beh[1] = 0
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 4
+	 BEHAV: prev_beh[4] = 0
+	 BEHAV: prev_beh[5] = 4
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 2
+	 BEHAV: distance_beh[0] = 0
+	 BEHAV: distance_beh[1] = 5
+	 BEHAV: distance_beh[2] = 7
+	 BEHAV: distance_beh[3] = 6
+	 BEHAV: distance_beh[4] = 3
+	 BEHAV: distance_beh[5] = 0
+	 BEHAV: distance_beh[6] = 6
+	 BEHAV: distance_beh[7] = 9
+	 BEHAV: distance_beh[8] = 10
+	 BEHAV: distance_beh[9] = 15
+	 BEHAV: distance_beh[10] = 18
+	 BEHAV: prev_beh[0] = 0
+	 BEHAV: prev_beh[1] = 0
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 4
+	 BEHAV: prev_beh[4] = 0
+	 BEHAV: prev_beh[5] = 4
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 1
+	 RTL: distance[0] = 0
+	 RTL: distance[1] = 5
+	 RTL: distance[2] = 7
+	 RTL: distance[3] = 6
+	 RTL: distance[4] = 3
+	 RTL: distance[5] = 5
+	 RTL: distance[6] = 6
+	 RTL: distance[7] = 9
+	 RTL: distance[8] = 10
+	 RTL: distance[9] = 15
+	 RTL: distance[10] = 18
+	 RTL: prev[0] = 0
+	 RTL: prev[1] = 0
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 4
+	 RTL: prev[4] = 0
+	 RTL: prev[5] = 4
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+	 GRAPH 2
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 GRAPH 1
+	 BEHAV: distance_beh[0] = 0
+	 BEHAV: distance_beh[1] = 5
+	 BEHAV: distance_beh[2] = 7
+	 BEHAV: distance_beh[3] = 6
+	 BEHAV: distance_beh[4] = 3
+	 BEHAV: distance_beh[5] = 5
+	 BEHAV: distance_beh[6] = 6
+	 BEHAV: distance_beh[7] = 9
+	 BEHAV: distance_beh[8] = 10
+	 BEHAV: distance_beh[9] = 15
+	 BEHAV: distance_beh[10] = 18
+	 BEHAV: prev_beh[0] = 0
+	 BEHAV: prev_beh[1] = 0
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 4
+	 BEHAV: prev_beh[4] = 0
+	 BEHAV: prev_beh[5] = 4
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 2
+	 BEHAV: distance_beh[0] = 0
+	 BEHAV: distance_beh[1] = 5
+	 BEHAV: distance_beh[2] = 7
+	 BEHAV: distance_beh[3] = 6
+	 BEHAV: distance_beh[4] = 3
+	 BEHAV: distance_beh[5] = 0
+	 BEHAV: distance_beh[6] = 6
+	 BEHAV: distance_beh[7] = 9
+	 BEHAV: distance_beh[8] = 10
+	 BEHAV: distance_beh[9] = 15
+	 BEHAV: distance_beh[10] = 18
+	 BEHAV: prev_beh[0] = 0
+	 BEHAV: prev_beh[1] = 0
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 4
+	 BEHAV: prev_beh[4] = 0
+	 BEHAV: prev_beh[5] = 4
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 1
+	 RTL: distance[0] = 0
+	 RTL: distance[1] = 5
+	 RTL: distance[2] = 7
+	 RTL: distance[3] = 6
+	 RTL: distance[4] = 3
+	 RTL: distance[5] = 5
+	 RTL: distance[6] = 6
+	 RTL: distance[7] = 9
+	 RTL: distance[8] = 10
+	 RTL: distance[9] = 15
+	 RTL: distance[10] = 18
+	 RTL: prev[0] = 0
+	 RTL: prev[1] = 0
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 4
+	 RTL: prev[4] = 0
+	 RTL: prev[5] = 4
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+	 GRAPH 2
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 GRAPH 1
+	 BEHAV: distance_beh[0] = 0
+	 BEHAV: distance_beh[1] = 5
+	 BEHAV: distance_beh[2] = 7
+	 BEHAV: distance_beh[3] = 6
+	 BEHAV: distance_beh[4] = 3
+	 BEHAV: distance_beh[5] = 5
+	 BEHAV: distance_beh[6] = 6
+	 BEHAV: distance_beh[7] = 9
+	 BEHAV: distance_beh[8] = 10
+	 BEHAV: distance_beh[9] = 15
+	 BEHAV: distance_beh[10] = 18
+	 BEHAV: prev_beh[0] = 0
+	 BEHAV: prev_beh[1] = 0
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 4
+	 BEHAV: prev_beh[4] = 0
+	 BEHAV: prev_beh[5] = 4
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 2
+	 BEHAV: distance_beh[0] = 5
+	 BEHAV: distance_beh[1] = 4
+	 BEHAV: distance_beh[2] = 6
+	 BEHAV: distance_beh[3] = 3
+	 BEHAV: distance_beh[4] = 2
+	 BEHAV: distance_beh[5] = 0
+	 BEHAV: distance_beh[6] = 1
+	 BEHAV: distance_beh[7] = 4
+	 BEHAV: distance_beh[8] = 5
+	 BEHAV: distance_beh[9] = 10
+	 BEHAV: distance_beh[10] = 13
+	 BEHAV: prev_beh[0] = 4
+	 BEHAV: prev_beh[1] = 3
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 6
+	 BEHAV: prev_beh[4] = 5
+	 BEHAV: prev_beh[5] = 0
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 1
+	 RTL: distance[0] = 0
+	 RTL: distance[1] = 5
+	 RTL: distance[2] = 7
+	 RTL: distance[3] = 6
+	 RTL: distance[4] = 3
+	 RTL: distance[5] = 5
+	 RTL: distance[6] = 6
+	 RTL: distance[7] = 9
+	 RTL: distance[8] = 10
+	 RTL: distance[9] = 15
+	 RTL: distance[10] = 18
+	 RTL: prev[0] = 0
+	 RTL: prev[1] = 0
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 4
+	 RTL: prev[4] = 0
+	 RTL: prev[5] = 4
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+	 GRAPH 2
+	 RTL: distance[0] = 5
+	 RTL: distance[1] = 4
+	 RTL: distance[2] = 6
+	 RTL: distance[3] = 3
+	 RTL: distance[4] = 2
+	 RTL: distance[5] = 0
+	 RTL: distance[6] = 1
+	 RTL: distance[7] = 4
+	 RTL: distance[8] = 5
+	 RTL: distance[9] = 10
+	 RTL: distance[10] = 13
+	 RTL: prev[0] = 4
+	 RTL: prev[1] = 3
+	 RTL: prev[2] = 1
+	 RTL: prev[3] = 6
+	 RTL: prev[4] = 5
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 5
+	 RTL: prev[7] = 6
+	 RTL: prev[8] = 7
+	 RTL: prev[9] = 8
+	 RTL: prev[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1044.363 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 GRAPH 1, SOURCE = 0:
+	 GRAPH 1
+	 BEHAV: distance_beh[0] = 0
+	 BEHAV: distance_beh[1] = 5
+	 BEHAV: distance_beh[2] = 7
+	 BEHAV: distance_beh[3] = 6
+	 BEHAV: distance_beh[4] = 3
+	 BEHAV: distance_beh[5] = 5
+	 BEHAV: distance_beh[6] = 6
+	 BEHAV: distance_beh[7] = 9
+	 BEHAV: distance_beh[8] = 10
+	 BEHAV: distance_beh[9] = 15
+	 BEHAV: distance_beh[10] = 18
+	 BEHAV: prev_beh[0] = 0
+	 BEHAV: prev_beh[1] = 0
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 4
+	 BEHAV: prev_beh[4] = 0
+	 BEHAV: prev_beh[5] = 4
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 2
+	 BEHAV: distance_beh[0] = 5
+	 BEHAV: distance_beh[1] = 4
+	 BEHAV: distance_beh[2] = 6
+	 BEHAV: distance_beh[3] = 3
+	 BEHAV: distance_beh[4] = 2
+	 BEHAV: distance_beh[5] = 0
+	 BEHAV: distance_beh[6] = 1
+	 BEHAV: distance_beh[7] = 4
+	 BEHAV: distance_beh[8] = 5
+	 BEHAV: distance_beh[9] = 10
+	 BEHAV: distance_beh[10] = 13
+	 BEHAV: prev_beh[0] = 4
+	 BEHAV: prev_beh[1] = 3
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 6
+	 BEHAV: prev_beh[4] = 5
+	 BEHAV: prev_beh[5] = 0
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 RTL: distance[0] = 255
+	 RTL: distance[1] = 255
+	 RTL: distance[2] = 255
+	 RTL: distance[3] = 255
+	 RTL: distance[4] = 255
+	 RTL: distance[5] = 255
+	 RTL: distance[6] = 255
+	 RTL: distance[7] = 255
+	 RTL: distance[8] = 255
+	 RTL: distance[9] = 255
+	 RTL: distance[10] = 255
+	 RTL: prev[0] = 0
+	 RTL: prev[1] = 0
+	 RTL: prev[2] = 0
+	 RTL: prev[3] = 0
+	 RTL: prev[4] = 0
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 0
+	 RTL: prev[7] = 0
+	 RTL: prev[8] = 0
+	 RTL: prev[9] = 0
+	 RTL: prev[10] = 0
+	 GRAPH 1, SOURCE = 5:
+	 RTL: distance[0] = 255
+	 RTL: distance[1] = 255
+	 RTL: distance[2] = 255
+	 RTL: distance[3] = 255
+	 RTL: distance[4] = 255
+	 RTL: distance[5] = 255
+	 RTL: distance[6] = 255
+	 RTL: distance[7] = 255
+	 RTL: distance[8] = 255
+	 RTL: distance[9] = 255
+	 RTL: distance[10] = 255
+	 RTL: prev[0] = 0
+	 RTL: prev[1] = 0
+	 RTL: prev[2] = 0
+	 RTL: prev[3] = 0
+	 RTL: prev[4] = 0
+	 RTL: prev[5] = 0
+	 RTL: prev[6] = 0
+	 RTL: prev[7] = 0
+	 RTL: prev[8] = 0
+	 RTL: prev[9] = 0
+	 RTL: prev[10] = 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.102 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL:
+	 GRAPH 1, SOURCE = 0:
+	 GRAPH 1
+	 BEHAV: distance_beh[0] = 0
+	 BEHAV: distance_beh[1] = 5
+	 BEHAV: distance_beh[2] = 7
+	 BEHAV: distance_beh[3] = 6
+	 BEHAV: distance_beh[4] = 3
+	 BEHAV: distance_beh[5] = 5
+	 BEHAV: distance_beh[6] = 6
+	 BEHAV: distance_beh[7] = 9
+	 BEHAV: distance_beh[8] = 10
+	 BEHAV: distance_beh[9] = 15
+	 BEHAV: distance_beh[10] = 18
+	 BEHAV: prev_beh[0] = 0
+	 BEHAV: prev_beh[1] = 0
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 4
+	 BEHAV: prev_beh[4] = 0
+	 BEHAV: prev_beh[5] = 4
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 2
+	 BEHAV: distance_beh[0] = 5
+	 BEHAV: distance_beh[1] = 4
+	 BEHAV: distance_beh[2] = 6
+	 BEHAV: distance_beh[3] = 3
+	 BEHAV: distance_beh[4] = 2
+	 BEHAV: distance_beh[5] = 0
+	 BEHAV: distance_beh[6] = 1
+	 BEHAV: distance_beh[7] = 4
+	 BEHAV: distance_beh[8] = 5
+	 BEHAV: distance_beh[9] = 10
+	 BEHAV: distance_beh[10] = 13
+	 BEHAV: prev_beh[0] = 4
+	 BEHAV: prev_beh[1] = 3
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 6
+	 BEHAV: prev_beh[4] = 5
+	 BEHAV: prev_beh[5] = 0
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 distance[0] = 255
+	 distance[1] = 255
+	 distance[2] = 255
+	 distance[3] = 255
+	 distance[4] = 255
+	 distance[5] = 255
+	 distance[6] = 255
+	 distance[7] = 255
+	 distance[8] = 255
+	 distance[9] = 255
+	 distance[10] = 255
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 0
+	 prev[3] = 0
+	 prev[4] = 0
+	 prev[5] = 0
+	 prev[6] = 0
+	 prev[7] = 0
+	 prev[8] = 0
+	 prev[9] = 0
+	 prev[10] = 0
+	 GRAPH 1, SOURCE = 5:
+	 distance[0] = 255
+	 distance[1] = 255
+	 distance[2] = 255
+	 distance[3] = 255
+	 distance[4] = 255
+	 distance[5] = 255
+	 distance[6] = 255
+	 distance[7] = 255
+	 distance[8] = 255
+	 distance[9] = 255
+	 distance[10] = 255
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 0
+	 prev[3] = 0
+	 prev[4] = 0
+	 prev[5] = 0
+	 prev[6] = 0
+	 prev[7] = 0
+	 prev[8] = 0
+	 prev[9] = 0
+	 prev[10] = 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL:
+	 GRAPH 1, SOURCE = 0:
+	 GRAPH 1
+	 BEHAV: distance_beh[0] = 0
+	 BEHAV: distance_beh[1] = 5
+	 BEHAV: distance_beh[2] = 7
+	 BEHAV: distance_beh[3] = 6
+	 BEHAV: distance_beh[4] = 3
+	 BEHAV: distance_beh[5] = 5
+	 BEHAV: distance_beh[6] = 6
+	 BEHAV: distance_beh[7] = 9
+	 BEHAV: distance_beh[8] = 10
+	 BEHAV: distance_beh[9] = 15
+	 BEHAV: distance_beh[10] = 18
+	 BEHAV: prev_beh[0] = 0
+	 BEHAV: prev_beh[1] = 0
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 4
+	 BEHAV: prev_beh[4] = 0
+	 BEHAV: prev_beh[5] = 4
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 GRAPH 2
+	 BEHAV: distance_beh[0] = 5
+	 BEHAV: distance_beh[1] = 4
+	 BEHAV: distance_beh[2] = 6
+	 BEHAV: distance_beh[3] = 3
+	 BEHAV: distance_beh[4] = 2
+	 BEHAV: distance_beh[5] = 0
+	 BEHAV: distance_beh[6] = 1
+	 BEHAV: distance_beh[7] = 4
+	 BEHAV: distance_beh[8] = 5
+	 BEHAV: distance_beh[9] = 10
+	 BEHAV: distance_beh[10] = 13
+	 BEHAV: prev_beh[0] = 4
+	 BEHAV: prev_beh[1] = 3
+	 BEHAV: prev_beh[2] = 1
+	 BEHAV: prev_beh[3] = 6
+	 BEHAV: prev_beh[4] = 5
+	 BEHAV: prev_beh[5] = 0
+	 BEHAV: prev_beh[6] = 5
+	 BEHAV: prev_beh[7] = 6
+	 BEHAV: prev_beh[8] = 7
+	 BEHAV: prev_beh[9] = 8
+	 BEHAV: prev_beh[10] = 9
+	 distance[0] = 0
+	 distance[1] = 5
+	 distance[2] = 7
+	 distance[3] = 6
+	 distance[4] = 3
+	 distance[5] = 5
+	 distance[6] = 6
+	 distance[7] = 9
+	 distance[8] = 10
+	 distance[9] = 15
+	 distance[10] = 18
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 1
+	 prev[3] = 4
+	 prev[4] = 0
+	 prev[5] = 4
+	 prev[6] = 5
+	 prev[7] = 6
+	 prev[8] = 7
+	 prev[9] = 8
+	 prev[10] = 9
+	 GRAPH 1, SOURCE = 5:
 	 distance[0] = 5
 	 distance[1] = 4
 	 distance[2] = 6
@@ -166,68 +2290,1125 @@ source dijkstra_tb.tcl
 	 prev[10] = 9
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 10000ns
-launch_runs synth_1 -jobs 4
-[Sun Jun 11 19:13:57 2023] Launched synth_1...
-Run output will be captured here: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 4
-[Sun Jun 11 19:14:26 2023] Launched impl_1...
-Run output will be captured here: C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.runs/impl_1/runme.log
-create_peripheral xilinx.com user dijkstra_ip 1.0 -dir C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/../ip_repo
-add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:dijkstra_ip:1.0]
-generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:dijkstra_ip:1.0]
-write_peripheral [ipx::find_open_core xilinx.com:user:dijkstra_ip:1.0]
-set_property  ip_repo_paths  C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/../ip_repo/dijkstra_ip_1.0 [current_project]
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
-ipx::edit_ip_in_project -upgrade true -name edit_dijkstra_ip_v1_0 -directory C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/../ip_repo c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1540.359 ; gain = 13.352
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
-WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1558.418 ; gain = 31.410
-update_compile_order -fileset sources_1
-set_property file_type SystemVerilog [get_files  c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v]
-set_property file_type SystemVerilog [get_files  c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v]
-set_property file_type Verilog [get_files  c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v]
-current_project Dijkstra
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-current_project edit_dijkstra_ip_v1_0
-close_project
-create_peripheral xilinx.com user dijkstra_ip 1.0 -dir C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/../ip_repo
-add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:dijkstra_ip:1.0]
-set_property VALUE 64 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:dijkstra_ip:1.0]]]
-generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:dijkstra_ip:1.0]
-write_peripheral [ipx::find_open_core xilinx.com:user:dijkstra_ip:1.0]
-set_property  ip_repo_paths  {C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/../ip_repo/dijkstra_ip_1.0 C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0} [current_project]
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
-WARNING: [IP_Flow 19-2207] Repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0' already exists; ignoring attempt to add it again.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
-ipx::edit_ip_in_project -upgrade true -name edit_dijkstra_ip_v1_0 -directory C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/../ip_repo c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1613.598 ; gain = 0.000
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
-WARNING: [IP_Flow 19-2207] Repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0' already exists; ignoring attempt to add it again.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v:]
-WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0.v:]
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1613.598 ; gain = 0.000
-update_compile_order -fileset sources_1
-set_property file_type SystemVerilog [get_files  c:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/ip_repo/dijkstra_ip_1.0/hdl/dijkstra_ip_v1_0_S00_AXI.v]
-close_project
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.102 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL:
+	 GRAPH 1, SOURCE = 0:
+	 distance[0] = 0
+	 distance[1] = 5
+	 distance[2] = 7
+	 distance[3] = 6
+	 distance[4] = 3
+	 distance[5] = 5
+	 distance[6] = 6
+	 distance[7] = 9
+	 distance[8] = 10
+	 distance[9] = 15
+	 distance[10] = 18
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 1
+	 prev[3] = 4
+	 prev[4] = 0
+	 prev[5] = 4
+	 prev[6] = 5
+	 prev[7] = 6
+	 prev[8] = 7
+	 prev[9] = 8
+	 prev[10] = 9
+	 GRAPH 1, SOURCE = 5:
+	 distance[0] = 5
+	 distance[1] = 4
+	 distance[2] = 6
+	 distance[3] = 3
+	 distance[4] = 2
+	 distance[5] = 0
+	 distance[6] = 1
+	 distance[7] = 4
+	 distance[8] = 5
+	 distance[9] = 10
+	 distance[10] = 13
+	 prev[0] = 4
+	 prev[1] = 3
+	 prev[2] = 1
+	 prev[3] = 6
+	 prev[4] = 5
+	 prev[5] = 0
+	 prev[6] = 5
+	 prev[7] = 6
+	 prev[8] = 7
+	 prev[9] = 8
+	 prev[10] = 9
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 0:
+	 distance_beh[0] = 0
+	 distance_beh[1] = 5
+	 distance_beh[2] = 7
+	 distance_beh[3] = 6
+	 distance_beh[4] = 3
+	 distance_beh[5] = 5
+	 distance_beh[6] = 6
+	 distance_beh[7] = 9
+	 distance_beh[8] = 10
+	 distance_beh[9] = 15
+	 distance_beh[10] = 18
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 1
+	 prev_beh[3] = 4
+	 prev_beh[4] = 0
+	 prev_beh[5] = 4
+	 prev_beh[6] = 5
+	 prev_beh[7] = 6
+	 prev_beh[8] = 7
+	 prev_beh[9] = 8
+	 prev_beh[10] = 9
+	 GRAPH 1, SOURCE = 5:
+	 distance_beh[0] = 5
+	 distance_beh[1] = 4
+	 distance_beh[2] = 6
+	 distance_beh[3] = 3
+	 distance_beh[4] = 2
+	 distance_beh[5] = 0
+	 distance_beh[6] = 1
+	 distance_beh[7] = 4
+	 distance_beh[8] = 5
+	 distance_beh[9] = 10
+	 distance_beh[10] = 13
+	 prev_beh[0] = 4
+	 prev_beh[1] = 3
+	 prev_beh[2] = 1
+	 prev_beh[3] = 6
+	 prev_beh[4] = 5
+	 prev_beh[5] = 0
+	 prev_beh[6] = 5
+	 prev_beh[7] = 6
+	 prev_beh[8] = 7
+	 prev_beh[9] = 8
+	 prev_beh[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1061.918 ; gain = 3.816
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL:
+	 GRAPH 1, SOURCE = 0:
+	 distance[0] = 0
+	 distance[1] = 5
+	 distance[2] = 7
+	 distance[3] = 6
+	 distance[4] = 3
+	 distance[5] = 5
+	 distance[6] = 6
+	 distance[7] = 9
+	 distance[8] = 10
+	 distance[9] = 15
+	 distance[10] = 18
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 1
+	 prev[3] = 4
+	 prev[4] = 0
+	 prev[5] = 4
+	 prev[6] = 5
+	 prev[7] = 6
+	 prev[8] = 7
+	 prev[9] = 8
+	 prev[10] = 9
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 0:
+	 distance_beh[0] = 0
+	 distance_beh[1] = 5
+	 distance_beh[2] = 7
+	 distance_beh[3] = 6
+	 distance_beh[4] = 3
+	 distance_beh[5] = 5
+	 distance_beh[6] = 6
+	 distance_beh[7] = 9
+	 distance_beh[8] = 10
+	 distance_beh[9] = 15
+	 distance_beh[10] = 18
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 1
+	 prev_beh[3] = 4
+	 prev_beh[4] = 0
+	 prev_beh[5] = 4
+	 prev_beh[6] = 5
+	 prev_beh[7] = 6
+	 prev_beh[8] = 7
+	 prev_beh[9] = 8
+	 prev_beh[10] = 9
+	 RTL:
+	 GRAPH 1, SOURCE = 5:
+	 distance[0] = 5
+	 distance[1] = 4
+	 distance[2] = 6
+	 distance[3] = 3
+	 distance[4] = 2
+	 distance[5] = 0
+	 distance[6] = 1
+	 distance[7] = 4
+	 distance[8] = 5
+	 distance[9] = 10
+	 distance[10] = 13
+	 prev[0] = 4
+	 prev[1] = 3
+	 prev[2] = 1
+	 prev[3] = 6
+	 prev[4] = 5
+	 prev[5] = 0
+	 prev[6] = 5
+	 prev[7] = 6
+	 prev[8] = 7
+	 prev[9] = 8
+	 prev[10] = 9
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 5:
+	 distance_beh[0] = 5
+	 distance_beh[1] = 4
+	 distance_beh[2] = 6
+	 distance_beh[3] = 3
+	 distance_beh[4] = 2
+	 distance_beh[5] = 0
+	 distance_beh[6] = 1
+	 distance_beh[7] = 4
+	 distance_beh[8] = 5
+	 distance_beh[9] = 10
+	 distance_beh[10] = 13
+	 prev_beh[0] = 4
+	 prev_beh[1] = 3
+	 prev_beh[2] = 1
+	 prev_beh[3] = 6
+	 prev_beh[4] = 5
+	 prev_beh[5] = 0
+	 prev_beh[6] = 5
+	 prev_beh[7] = 6
+	 prev_beh[8] = 7
+	 prev_beh[9] = 8
+	 prev_beh[10] = 9
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance[0] = 0
+	 distance[1] = 5
+	 distance[2] = 7
+	 distance[3] = 6
+	 distance[4] = 3
+	 distance[5] = 5
+	 distance[6] = 6
+	 distance[7] = 9
+	 distance[8] = 10
+	 distance[9] = 15
+	 distance[10] = 18
+	 prev[0] = 0 
+
+	 prev[1] = 0 
+
+	 prev[2] = 1 
+
+	 prev[3] = 4 
+
+	 prev[4] = 0 
+
+	 prev[5] = 4 
+
+	 prev[6] = 5 
+
+	 prev[7] = 6 
+
+	 prev[8] = 7 
+
+	 prev[9] = 8 
+
+	 prev[10] = 9 
+
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance_beh[0] = 0
+	 distance_beh[1] = 5
+	 distance_beh[2] = 7
+	 distance_beh[3] = 6
+	 distance_beh[4] = 3
+	 distance_beh[5] = 5
+	 distance_beh[6] = 6
+	 distance_beh[7] = 9
+	 distance_beh[8] = 10
+	 distance_beh[9] = 15
+	 distance_beh[10] = 18
+	 prev_beh[0] = 0 
+
+	 prev_beh[1] = 0 
+
+	 prev_beh[2] = 1 
+
+	 prev_beh[3] = 4 
+
+	 prev_beh[4] = 0 
+
+	 prev_beh[5] = 4 
+
+	 prev_beh[6] = 5 
+
+	 prev_beh[7] = 6 
+
+	 prev_beh[8] = 7 
+
+	 prev_beh[9] = 8 
+
+	 prev_beh[10] = 9 
+
+	 RTL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance[0] = 5
+	 distance[1] = 4
+	 distance[2] = 6
+	 distance[3] = 3
+	 distance[4] = 2
+	 distance[5] = 0
+	 distance[6] = 1
+	 distance[7] = 4
+	 distance[8] = 5
+	 distance[9] = 10
+	 distance[10] = 13
+	 prev[0] = 4 
+
+	 prev[1] = 3 
+
+	 prev[2] = 1 
+
+	 prev[3] = 6 
+
+	 prev[4] = 5 
+
+	 prev[5] = 0 
+
+	 prev[6] = 5 
+
+	 prev[7] = 6 
+
+	 prev[8] = 7 
+
+	 prev[9] = 8 
+
+	 prev[10] = 9 
+
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance_beh[0] = 5
+	 distance_beh[1] = 4
+	 distance_beh[2] = 6
+	 distance_beh[3] = 3
+	 distance_beh[4] = 2
+	 distance_beh[5] = 0
+	 distance_beh[6] = 1
+	 distance_beh[7] = 4
+	 distance_beh[8] = 5
+	 distance_beh[9] = 10
+	 distance_beh[10] = 13
+	 prev_beh[0] = 4 
+
+	 prev_beh[1] = 3 
+
+	 prev_beh[2] = 1 
+
+	 prev_beh[3] = 6 
+
+	 prev_beh[4] = 5 
+
+	 prev_beh[5] = 0 
+
+	 prev_beh[6] = 5 
+
+	 prev_beh[7] = 6 
+
+	 prev_beh[8] = 7 
+
+	 prev_beh[9] = 8 
+
+	 prev_beh[10] = 9 
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1087.094 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_behav(MAX_VALUE=255)
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance[0] = 0
+	 distance[1] = 5
+	 distance[2] = 7
+	 distance[3] = 6
+	 distance[4] = 3
+	 distance[5] = 5
+	 distance[6] = 6
+	 distance[7] = 9
+	 distance[8] = 10
+	 distance[9] = 15
+	 distance[10] = 18
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 1
+	 prev[3] = 4
+	 prev[4] = 0
+	 prev[5] = 4
+	 prev[6] = 5
+	 prev[7] = 6
+	 prev[8] = 7
+	 prev[9] = 8
+	 prev[10] = 9
+
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance_beh[0] = 0
+	 distance_beh[1] = 5
+	 distance_beh[2] = 7
+	 distance_beh[3] = 6
+	 distance_beh[4] = 3
+	 distance_beh[5] = 5
+	 distance_beh[6] = 6
+	 distance_beh[7] = 9
+	 distance_beh[8] = 10
+	 distance_beh[9] = 15
+	 distance_beh[10] = 18
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 1
+	 prev_beh[3] = 4
+	 prev_beh[4] = 0
+	 prev_beh[5] = 4
+	 prev_beh[6] = 5
+	 prev_beh[7] = 6
+	 prev_beh[8] = 7
+	 prev_beh[9] = 8
+	 prev_beh[10] = 9
+
+	 RTL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance[0] = 5
+	 distance[1] = 4
+	 distance[2] = 6
+	 distance[3] = 3
+	 distance[4] = 2
+	 distance[5] = 0
+	 distance[6] = 1
+	 distance[7] = 4
+	 distance[8] = 5
+	 distance[9] = 10
+	 distance[10] = 13
+	 prev[0] = 4
+	 prev[1] = 3
+	 prev[2] = 1
+	 prev[3] = 6
+	 prev[4] = 5
+	 prev[5] = 0
+	 prev[6] = 5
+	 prev[7] = 6
+	 prev[8] = 7
+	 prev[9] = 8
+	 prev[10] = 9
+
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance_beh[0] = 5
+	 distance_beh[1] = 4
+	 distance_beh[2] = 6
+	 distance_beh[3] = 3
+	 distance_beh[4] = 2
+	 distance_beh[5] = 0
+	 distance_beh[6] = 1
+	 distance_beh[7] = 4
+	 distance_beh[8] = 5
+	 distance_beh[9] = 10
+	 distance_beh[10] = 13
+	 prev_beh[0] = 4
+	 prev_beh[1] = 3
+	 prev_beh[2] = 1
+	 prev_beh[3] = 6
+	 prev_beh[4] = 5
+	 prev_beh[5] = 0
+	 prev_beh[6] = 5
+	 prev_beh[7] = 6
+	 prev_beh[8] = 7
+	 prev_beh[9] = 8
+	 prev_beh[10] = 9
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1087.094 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(VERTICES=9,MAX_VALU...
+Compiling module xil_defaultlib.dijkstra_behav(VERTICES=9,MAX_VA...
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance[0] = 0
+	 distance[1] = 1
+	 distance[2] = 1
+	 distance[3] = 8
+	 distance[4] = 8
+	 distance[5] = 2
+	 distance[6] = 5
+	 distance[7] = 4
+	 distance[8] = 6
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 0
+	 prev[3] = 0
+	 prev[4] = 7
+	 prev[5] = 2
+	 prev[6] = 7
+	 prev[7] = 5
+	 prev[8] = 6
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance_beh[0] = 0
+	 distance_beh[1] = 1
+	 distance_beh[2] = 1
+	 distance_beh[3] = 8
+	 distance_beh[4] = 8
+	 distance_beh[5] = 2
+	 distance_beh[6] = 5
+	 distance_beh[7] = 4
+	 distance_beh[8] = 6
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 0
+	 prev_beh[3] = 0
+	 prev_beh[4] = 7
+	 prev_beh[5] = 2
+	 prev_beh[6] = 7
+	 prev_beh[7] = 5
+	 prev_beh[8] = 6
+	 RTL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance[0] = 2
+	 distance[1] = 3
+	 distance[2] = 1
+	 distance[3] = 8
+	 distance[4] = 6
+	 distance[5] = 0
+	 distance[6] = 3
+	 distance[7] = 2
+	 distance[8] = 4
+	 prev[0] = 2
+	 prev[1] = 0
+	 prev[2] = 5
+	 prev[3] = 4
+	 prev[4] = 7
+	 prev[5] = 0
+	 prev[6] = 7
+	 prev[7] = 5
+	 prev[8] = 6
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance_beh[0] = 2
+	 distance_beh[1] = 3
+	 distance_beh[2] = 1
+	 distance_beh[3] = 8
+	 distance_beh[4] = 6
+	 distance_beh[5] = 0
+	 distance_beh[6] = 3
+	 distance_beh[7] = 2
+	 distance_beh[8] = 4
+	 prev_beh[0] = 2
+	 prev_beh[1] = 0
+	 prev_beh[2] = 5
+	 prev_beh[3] = 4
+	 prev_beh[4] = 7
+	 prev_beh[5] = 0
+	 prev_beh[6] = 7
+	 prev_beh[7] = 5
+	 prev_beh[8] = 6
+	 RTL:
+	 GRAPH 2, SOURCE = 0: 
+
+	 distance[0] = 0
+	 distance[1] = 1
+	 distance[2] = 2
+	 distance[3] = 8
+	 distance[4] = 3
+	 distance[5] = 4
+	 distance[6] = 10
+	 distance[7] = 6
+	 distance[8] = 5
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 1
+	 prev[3] = 1
+	 prev[4] = 2
+	 prev[5] = 2
+	 prev[6] = 5
+	 prev[7] = 4
+	 prev[8] = 5
+	 BEHAVIORAL:
+	 GRAPH 2, SOURCE = 0: 
+
+	 distance_beh[0] = 0
+	 distance_beh[1] = 1
+	 distance_beh[2] = 2
+	 distance_beh[3] = 8
+	 distance_beh[4] = 3
+	 distance_beh[5] = 4
+	 distance_beh[6] = 10
+	 distance_beh[7] = 6
+	 distance_beh[8] = 5
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 1
+	 prev_beh[3] = 1
+	 prev_beh[4] = 2
+	 prev_beh[5] = 2
+	 prev_beh[6] = 5
+	 prev_beh[7] = 4
+	 prev_beh[8] = 5
+	 RTL:
+	 GRAPH 2, SOURCE = 7: 
+
+	 distance[0] = 6
+	 distance[1] = 5
+	 distance[2] = 4
+	 distance[3] = 12
+	 distance[4] = 3
+	 distance[5] = 4
+	 distance[6] = 10
+	 distance[7] = 0
+	 distance[8] = 5
+	 prev[0] = 1
+	 prev[1] = 2
+	 prev[2] = 4
+	 prev[3] = 1
+	 prev[4] = 7
+	 prev[5] = 7
+	 prev[6] = 5
+	 prev[7] = 0
+	 prev[8] = 5
+	 BEHAVIORAL:
+	 GRAPH 2, SOURCE = 7: 
+
+	 distance_beh[0] = 6
+	 distance_beh[1] = 5
+	 distance_beh[2] = 4
+	 distance_beh[3] = 12
+	 distance_beh[4] = 3
+	 distance_beh[5] = 4
+	 distance_beh[6] = 10
+	 distance_beh[7] = 0
+	 distance_beh[8] = 5
+	 prev_beh[0] = 1
+	 prev_beh[1] = 2
+	 prev_beh[2] = 4
+	 prev_beh[3] = 1
+	 prev_beh[4] = 7
+	 prev_beh[5] = 7
+	 prev_beh[6] = 5
+	 prev_beh[7] = 0
+	 prev_beh[8] = 5
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.809 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'dijkstra_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dijkstra_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_behav
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sources_1/new/dijkstra_rtl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_rtl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.srcs/sim_1/new/dijkstra_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dijkstra_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 73cba3cd0fd142d1879a83a08d57945d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dijkstra_tb_behav xil_defaultlib.dijkstra_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dijkstra_rtl(VERTICES=9,MAX_VALU...
+Compiling module xil_defaultlib.dijkstra_behav(VERTICES=9,MAX_VA...
+Compiling module xil_defaultlib.dijkstra_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dijkstra_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olafu/Desktop/SDUP/PROJEKT/SDUP_Dijkstra/Dijkstra/Dijkstra.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dijkstra_tb_behav -key {Behavioral:sim_1:Functional:dijkstra_tb} -tclbatch {dijkstra_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source dijkstra_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+	 RTL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance[0] = 0
+	 distance[1] = 1
+	 distance[2] = 1
+	 distance[3] = 8
+	 distance[4] = 8
+	 distance[5] = 2
+	 distance[6] = 5
+	 distance[7] = 4
+	 distance[8] = 6
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 0
+	 prev[3] = 0
+	 prev[4] = 7
+	 prev[5] = 2
+	 prev[6] = 7
+	 prev[7] = 5
+	 prev[8] = 6
+
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 0: 
+
+	 distance_beh[0] = 0
+	 distance_beh[1] = 1
+	 distance_beh[2] = 1
+	 distance_beh[3] = 8
+	 distance_beh[4] = 8
+	 distance_beh[5] = 2
+	 distance_beh[6] = 5
+	 distance_beh[7] = 4
+	 distance_beh[8] = 6
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 0
+	 prev_beh[3] = 0
+	 prev_beh[4] = 7
+	 prev_beh[5] = 2
+	 prev_beh[6] = 7
+	 prev_beh[7] = 5
+	 prev_beh[8] = 6
+
+	 RTL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance[0] = 2
+	 distance[1] = 3
+	 distance[2] = 1
+	 distance[3] = 8
+	 distance[4] = 6
+	 distance[5] = 0
+	 distance[6] = 3
+	 distance[7] = 2
+	 distance[8] = 4
+	 prev[0] = 2
+	 prev[1] = 0
+	 prev[2] = 5
+	 prev[3] = 4
+	 prev[4] = 7
+	 prev[5] = 0
+	 prev[6] = 7
+	 prev[7] = 5
+	 prev[8] = 6
+
+	 BEHAVIORAL:
+	 GRAPH 1, SOURCE = 5: 
+
+	 distance_beh[0] = 2
+	 distance_beh[1] = 3
+	 distance_beh[2] = 1
+	 distance_beh[3] = 8
+	 distance_beh[4] = 6
+	 distance_beh[5] = 0
+	 distance_beh[6] = 3
+	 distance_beh[7] = 2
+	 distance_beh[8] = 4
+	 prev_beh[0] = 2
+	 prev_beh[1] = 0
+	 prev_beh[2] = 5
+	 prev_beh[3] = 4
+	 prev_beh[4] = 7
+	 prev_beh[5] = 0
+	 prev_beh[6] = 7
+	 prev_beh[7] = 5
+	 prev_beh[8] = 6
+
+	 RTL:
+	 GRAPH 2, SOURCE = 0: 
+
+	 distance[0] = 0
+	 distance[1] = 1
+	 distance[2] = 2
+	 distance[3] = 8
+	 distance[4] = 3
+	 distance[5] = 4
+	 distance[6] = 10
+	 distance[7] = 6
+	 distance[8] = 5
+	 prev[0] = 0
+	 prev[1] = 0
+	 prev[2] = 1
+	 prev[3] = 1
+	 prev[4] = 2
+	 prev[5] = 2
+	 prev[6] = 5
+	 prev[7] = 4
+	 prev[8] = 5
+
+	 BEHAVIORAL:
+	 GRAPH 2, SOURCE = 0: 
+
+	 distance_beh[0] = 0
+	 distance_beh[1] = 1
+	 distance_beh[2] = 2
+	 distance_beh[3] = 8
+	 distance_beh[4] = 3
+	 distance_beh[5] = 4
+	 distance_beh[6] = 10
+	 distance_beh[7] = 6
+	 distance_beh[8] = 5
+	 prev_beh[0] = 0
+	 prev_beh[1] = 0
+	 prev_beh[2] = 1
+	 prev_beh[3] = 1
+	 prev_beh[4] = 2
+	 prev_beh[5] = 2
+	 prev_beh[6] = 5
+	 prev_beh[7] = 4
+	 prev_beh[8] = 5
+
+	 RTL:
+	 GRAPH 2, SOURCE = 7: 
+
+	 distance[0] = 6
+	 distance[1] = 5
+	 distance[2] = 4
+	 distance[3] = 12
+	 distance[4] = 3
+	 distance[5] = 4
+	 distance[6] = 10
+	 distance[7] = 0
+	 distance[8] = 5
+	 prev[0] = 1
+	 prev[1] = 2
+	 prev[2] = 4
+	 prev[3] = 1
+	 prev[4] = 7
+	 prev[5] = 7
+	 prev[6] = 5
+	 prev[7] = 0
+	 prev[8] = 5
+
+	 BEHAVIORAL:
+	 GRAPH 2, SOURCE = 7: 
+
+	 distance_beh[0] = 6
+	 distance_beh[1] = 5
+	 distance_beh[2] = 4
+	 distance_beh[3] = 12
+	 distance_beh[4] = 3
+	 distance_beh[5] = 4
+	 distance_beh[6] = 10
+	 distance_beh[7] = 0
+	 distance_beh[8] = 5
+	 prev_beh[0] = 1
+	 prev_beh[1] = 2
+	 prev_beh[2] = 4
+	 prev_beh[3] = 1
+	 prev_beh[4] = 7
+	 prev_beh[5] = 7
+	 prev_beh[6] = 5
+	 prev_beh[7] = 0
+	 prev_beh[8] = 5
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dijkstra_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.809 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 11 20:30:47 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 22 20:38:01 2023...
